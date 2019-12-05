@@ -1,0 +1,476 @@
+/* You can add global styles to this file, and also import other style files */
+@import '~bootstrap/dist/css/bootstrap.min.css';
+$fa-font-path: "../node_modules/font-awesome/fonts";
+@import "../node_modules/font-awesome/scss/font-awesome.scss";
+@import '~@angular/material/prebuilt-themes/deeppurple-amber.css';
+@import '../node_modules/ngx-toastr/toastr.css';
+
+html {
+    position: relative;
+    min-height: 100%;
+}
+html, body {
+    // height: 100%;
+    font-family: 'Roboto';
+}
+body::-webkit-scrollbar-track
+{
+    border: 1px solid #ccc;
+	background-color: transparent;
+}
+
+body::-webkit-scrollbar
+{
+	width: 8px;
+	background-color: transparent;
+}
+
+body::-webkit-scrollbar-thumb
+{
+	background-color: #1866a3;
+}
+html, body{
+    height: 100%;
+    padding: 0;
+    margin: 0;
+    max-height: 100%;
+}
+.quick-padding {
+    padding: 20px;
+}
+.pointer {
+    cursor: pointer;
+}
+.quick-double-padding {
+    padding: 40px;
+}
+.text-red {
+    color: red;
+}
+.quick-hz-padding {
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+.quick-side-padding {
+    padding-left: 20px;
+    padding-right: 20px;
+}
+.quick-side-margin {
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.zero-margin {
+    margin: 0;
+}
+.padding-top {
+    padding-top: 20px;
+}
+.padding-bottom {
+    padding-bottom: 20px;
+}
+.quick-margin {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.zero-padding {
+    padding: 0;
+}
+.zero-padding-top {
+    padding-top: 0;
+}
+.zero-padding-bottom {
+    padding-bottom: 0;
+}
+.zero-margin-bottom {
+    margin-bottom: 0;
+}
+.float-right {
+    float: right;
+}
+.breadcrumb {
+    background: transparent;
+}
+.full-width {
+    width: 100%;
+}
+.margin-bottom {
+    margin-bottom: 20px;
+}
+.main-container{
+    margin-top: 20px;
+    margin-bottom: 20px;
+    box-shadow: 0 2px 4px 0 rgba(0,0,0,0.16),0 2px 10px 0 rgba(0,0,0,0.12)!important;
+}
+.main-container accordion-group .card{
+    border: none;
+}
+.main-container accordion-group .card .card-header{
+    padding: 0px !important;
+    background-color: #1866a3;
+}
+.main-container accordion-group .card .card-header .accordion-toggle .btn{
+    color: #ffffff;
+    background-color: #043167;
+    // font-weight: 700;
+    padding: 10px;
+    text-align: left;
+    border-radius: 0;
+}
+.main-container accordion-group .card-body label{
+    font-weight: 700;
+    margin-bottom: 0px;
+    padding-left: 10px;
+}
+.main-container accordion-group .card-body .plan-type label{
+    font-weight: unset;
+}
+.main-container accordion-group .card-body label span{
+    padding-left: 10px;
+    color: #bbbbbb;
+    font-style: italic;
+}
+// .main-container accordion-group .card-body input{}
+.main-container accordion-group .card-body .plan-type input{
+    height: 15px;
+}
+.main-container accordion-group .card-body input:focus, .main-container accordion-group .card-body select:focus{
+    box-shadow: none;
+}
+.main-container accordion-group .card .collapse{
+    border:1px solid #BFBFBF;
+    border-top-color: #1866a3;
+}
+.main-container accordion-group .card-body .row{
+    justify-content: center;
+}
+.main-container accordion-group .card-body .plan-type .row{
+    justify-content: unset;
+}
+.margin-bottom {
+    margin-bottom: 20px;
+}
+.margin-top {
+    margin-top: 20px;
+}
+.bold {
+    font-weight: 600;
+}
+.margin-right {
+    margin-right: 10px;
+}
+.margin-left {
+    margin-left: 20px;
+}
+.rs-centered-box {
+    box-shadow: 0 2px 4px 0 rgba(0,0,0,0.16),0 2px 10px 0 rgba(0,0,0,0.12)!important;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    // border: 1px solid #000;
+    background-color: #fff;
+    // position: absolute;
+    // top: 50%;
+    // left: 50%;
+    // margin: 0;
+    // transform: translate(-50%, -50%);
+}
+@media only screen and (min-width:320px) and (max-width:500px) {
+    .rs-centered-box {
+        width: 100%;
+    }
+    .centered-box {
+        width: 100%;
+    }
+}
+.centered-box {
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    // border: 1px solid #000;
+    background-color: #fff;
+    box-shadow: 0 2px 4px 0 rgba(0,0,0,0.16),0 2px 10px 0 rgba(0,0,0,0.12)!important;
+}
+.header {
+    background-color: #043167;
+}
+.optional {
+    padding-left: 10px;
+    color: #bbbbbb;
+    font-style: italic;
+    font-weight: 600;
+}
+@media only screen and (min-width:320px) and (max-width:768px) {
+    .scroll {
+        overflow: scroll;
+    }
+}
+p {
+    margin-bottom: 0;
+    padding: 10px;
+}
+input, select {
+    border: 1px solid #000 !important;
+    border-radius: 0 !important;
+}
+input[type=date] {
+    width: 100%;
+    height: calc(1.5em + .75rem + 2px);
+    padding: .375rem .75rem;
+}
+button {
+    margin-top: 23px;
+    border: 1px solid #000;
+    border-radius: 8px;
+    padding: 5px 25px;
+}
+.light-gray {
+    background-color: lightgray;
+}
+@media only screen and (min-width:500px) {
+    .text-right-in-desktops {
+        text-align: right !important;
+    }
+    .text-left-in-desktops {
+        text-align: left !important;
+    }.text-center-in-desktops {
+        text-align: center !important;
+    }
+}
+.gray-text {
+    color: #aba9a9;
+    font-weight: 700;
+    font-size: 16px;
+    margin-left: 8px;
+    font-style: italic;
+}
+.display-block {
+    display: block;
+}
+.display-inline-block {
+    display: inline-block;
+}
+.link {
+    color: #1866a3;
+}
+.underline-on-hover:focus, .underline-on-hover:hover {
+    text-decoration: underline;
+}
+.highlight {
+    font-weight: 600;
+}
+// input, select {
+//     background-color: transparent !important;
+// }
+// .header {
+//     background-color: #043167;
+//     color: #fff;
+//     // border-bottom: 1px solid #000;
+// }
+// .header p {
+//     padding: 10px;
+// }
+.centered-box .header p, .rs-centered-box .header p {
+    color: #fff;
+}
+button {
+    color: #ffffff;
+    border-radius: 10px;
+    background-color: #1866a3;
+    width: 100px;
+    padding: 8px 10px;
+    border: none;
+}
+.theme-green .bs-datepicker-head{
+    background-color: #1866a3;
+}
+.bs-datepicker-head button{
+    margin-top: 0px;
+}
+.theme-green .bs-datepicker-body table td.week span{
+    color:#043167;
+}
+.theme-green .bs-datepicker-body table td span.selected, .theme-green .bs-datepicker-body table td.selected span, .theme-green .bs-datepicker-body table td span[class*="select-"]:after, .theme-green .bs-datepicker-body table td[class*="select-"] span:after{
+    background-color: #1866a3;
+}
+// .bs-datepicker-body table td.week.ng-star-inserted{
+//     display: none;
+// }
+// .bs-datepicker-body table th:first-child{
+//     display: none;
+// }
+.btn.btn-link{
+    width: 100%;
+    margin-top: 0px;
+}
+input, select {
+    cursor: pointer;
+}
+.mat-elevation-z8{
+    box-shadow: none;
+}
+.mat-elevation-z8 th.mat-header-cell{
+    text-align: center;
+    font-weight: 700;
+    color: #ffffff;
+    font-size: 16px;
+}
+.mat-elevation-z8 td.mat-cell{
+    font-size: 16px;
+}
+.mat-elevation-z8 th.mat-header-cell, .mat-elevation-z8 td.mat-cell{
+    // border: 1px solid;
+    padding: 10px;
+}
+.mat-elevation-z8 th.mat-header-cell:first-of-type{
+    padding-left: 10px;
+}
+.mat-elevation-z8 tr.mat-header-row,.mat-elevation-z8 tr.mat-row{
+    height: auto;
+}
+.mat-elevation-z8 thead{
+    background-color: #1866a3;
+}
+.bs-datepicker-container {
+    padding: 10px;
+}
+.mat-expansion-indicator::after{
+    border-color: #ffffff;
+}
+.underline {
+    text-decoration: underline;
+}
+table {
+    text-align: center;
+    width: 100%;
+}
+tr {
+    border-left: 1px solid darkgray;
+    border-right: 1px solid darkgray;
+}
+td, th {
+    border-bottom: 1px solid darkgray;
+    border-top: 1px solid darkgray;
+}
+thead {
+    background-color: #1866a3;
+    color: #fff;
+}
+th {
+    font-weight: 100 !important;
+}
+tr:nth-child(even) {
+    background-color: #c6dcee;
+}
+.secondary-menu {
+    background-color: #1866a3;
+    color: #fff;
+}
+.reports-table table{
+    border: 1px solid #000000;
+}
+.downloads_table thead, .reports-table thead{
+    background-color: #1866a3;
+    color: #fff;
+}
+.downloads_table tr.mat-header-row{
+    border: none;
+}
+.downloads_table th.mat-header-cell, .reports-table th.mat-header-cell{
+    border: 1px solid #ffffff;
+    font-size: 18px;
+    color: #ffffff;
+    text-align: left;
+    padding-left: 15px;
+}
+.downloads_table td.mat-cell, .reports-table td.mat-cell{
+    text-align: left;
+    border: 1px solid #ffffff;
+    padding-left: 15px;
+}
+.downloads_table tr.mat-row{
+    background-color: #cccccc70;
+    margin: 2px 0px;
+    border: 1px solid #000000 !important;
+}
+.website-footer {
+    background-color: #1866a3;
+    position: relative;
+    color: #fff;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    overflow: hidden;
+    // min-height: 200px;
+    // margin-top: 20px;
+}
+.website-footer p {
+    font-size: 12px;
+    padding: 5px 10px;
+}
+.wrapper {
+    min-height: 100%;
+    height: auto !important;
+    height: 100%;
+    margin: 0 auto -175px;
+}
+.website-footer-push {
+    height: 175px;
+}
+// @media only screen and (min-width:320px) and (max-width:1024px) {
+//     .website-footer {
+//         height: 210px;
+//     }
+//     .main-section {
+//         padding-bottom: 210px;
+//     }
+// }
+// @media only screen and (min-width:1440px) {
+//     .website-footer {
+//         height: 175px;
+//     }
+//     .main-section {
+//         padding-bottom: 175px;
+//     }
+// }
+// .mat-sort-header-container {
+//     display: unset;
+//     cursor: unset;
+//     align-items: unset;
+// }
+// .mat-sort-header-button {
+//     border: none;
+//     background: 0 0;
+//     display: unset;
+//     align-items: unset;
+//     padding: 0;
+//     cursor: inherit;
+//     outline: 0;
+//     font: inherit;
+//     color: currentColor;
+// }
+// .mat-sort-header-arrow, [dir=rtl] .mat-sort-header-position-before .mat-sort-header-arrow {
+//     display: none !important;
+// }
+// .mat-sort-header-arrow {
+//     display: none !important;
+// }
+// .mat-sort-header-button {
+//     display: unset;
+// }
+.mat-sort-header-container button {
+    margin-top: 0;
+}
+.mat-sort-header-stem, .mat-sort-header-pointer-left, .mat-sort-header-pointer-right, .mat-sort-header-pointer-middle {
+    background: #fff !important;
+}
+.mat-sort-header-button {
+    display: unset !important;
+}
+.mat-elevation-z8 th.mat-header-cell, .mat-elevation-z8 td.mat-cell {
+    padding: 6px !important;
+}
+
+.bcbstable td.mat-cell{
+    cursor: pointer;
+}
